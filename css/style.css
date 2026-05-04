@@ -189,6 +189,7 @@ section { padding: 80px 0; }
   z-index: 999;
   border-top: 1px solid var(--gray-200);
   gap:0.8rem;
+  /* gap:5px; */
   transform-origin: top;
   margin-top: 1%;
   
@@ -207,11 +208,11 @@ section { padding: 80px 0; }
 .mobile-nav a:hover { color: var(--blue-mid); padding-left: 8px; }
 .mobile-nav a:last-child { border-bottom: none; }
 .mobile-nav .btn-nav {
-  margin-top: 12px;
+  margin-top: 12%;
   background: var(--blue-dark);
   color: var(--white) !important;
   text-align: center;
-  padding: 12px 20px !important;
+  padding: 5px 20px !important;
   border-radius: var(--radius-sm) !important;
   font-weight: 600 !important;
 }
