@@ -2,7 +2,7 @@
    appointment.js
    Handles the Book Appointment form:
    - Client-side validation
-   - Sends form data to mohammedtaif@gmail.com
+   - Sends form data to arun@gmail.com
      via FormSubmit (https://formsubmit.co/)
    - Shows success / error messages
    ========================================= */
@@ -54,8 +54,8 @@ function initAppointmentForm() {
 
     try {
       // FormSubmit.co — free email service for static sites.
-      // Replace mohammedtaif@gmail.com with the doctor's email when ready.
-      const response = await fetch('https://formsubmit.co/ajax/mohammedtaif@gmail.com', {
+      // Replace arun@gmail.com with the doctor's email when ready.
+      const response = await fetch('https://formsubmit.co/ajax/arun@gmail.com', {
         method : 'POST',
         body   : data,
         headers: { Accept: 'application/json' }

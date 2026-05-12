@@ -95,17 +95,18 @@ const footerHTML = `
           <li><a href="services.html">General Dentistry</a></li>
         </ul>
       </div>
+  
 
       <!-- Contact Info -->
       <div class="footer-col">
         <h4>Contact Us</h4>
         <div class="footer-contact-item">
           <div class="icon">📍</div>
-          <p>Sky Dental, 2-898/8, Tellapur Rd, Gachibowil, Nallagandla, Telangana 500046</p>
+          <p>Sky Dental, 2-89/8, Tellapur Rd, Gachibowil, Nallagandla, Telangana 500046</p>
         </div>
         <div class="footer-contact-item">
           <div class="icon">📞</div>
-          <p><a href="tel:+919000000000">+91 90000 00000</a></p>
+          <p><a href="tel:+919000000000">+91 9676306667</a></p>
         </div>
         <div class="footer-contact-item">
           <div class="icon">📧</div>
@@ -113,17 +114,20 @@ const footerHTML = `
         </div>
         <div class="footer-contact-item">
           <div class="icon">🕐</div>
-          <p>Mon–Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 2:00 PM</p>
+          <p>Mon–Sat: 9:30 AM – 8:30 PM<br>Sunday: 10:00 AM – 2:00 PM</p>
         </div>
       </div>
     </div>
 
-    <!-- Footer Bottom Bar -->
-    <div class="footer-bottom">
+    
+   <!-- Footer Bottom Bar -->
+     <div class="footer-bottom">
       <p>© 2025 Sky Dental. All rights reserved.</p>
-      <p>Designed with ❤️ for Dr. Arun Teja</p>
+
+       <!--<p>Designed with ❤️ for Dr. Arun Teja</p> -->
     </div>
   </div>
+  
 </footer>
 `;
 
