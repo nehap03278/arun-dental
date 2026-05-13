@@ -980,7 +980,7 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 .appt-info-card {
   background: var(--blue-dark);
   border-radius: var(--radius-lg);
-  padding: 40px;
+  padding: 60px;
   color: var(--white);
 }
 .appt-info-card h3 { font-family: var(--font-head); font-size: 1.3rem; margin-bottom: 20px; color: var(--gold); }
