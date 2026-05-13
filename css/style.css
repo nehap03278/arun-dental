@@ -323,12 +323,17 @@ section { padding: 80px 0; }
   text-decoration: none;
 }
 .btn-primary {
-  background: var(--blue-dark);
+  /* background: var(--blue-dark); */
+  /* background: gold; */
+  background:  var(--gold);
   color: var(--white);
-  border-color: var(--blue-dark);
+  /* border-color: var(--blue-dark); */
+  /* color: white; */
+   background: var(--gold);
 }
 .btn-primary:hover {
-  background: var(--blue-mid);
+  /* background: var(--blue-mid); */
+  background: var(--gold);
   border-color: var(--blue-mid);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -826,22 +831,34 @@ section { padding: 80px 0; }
    CONTACT INFO CARDS
    ========================================= */
 .contact-info-grid {
-  display: grid;
+   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: 48px;
+  margin-top: 48px; 
 
+  
 }
 .contact-info-card {
   background: var(--white);
   border-radius: var(--radius-md);
-  padding: 32px 28px;
+  /* padding: 32px 28px; */
   text-align: center;
   border: 1px solid var(--gray-200);
   transition: var(--transition);
-  width:80%;
+  /* width:80%; */
   /* margin:60px 20px; */
-  margin-left: 12%;
+  /* margin-left: 12%; */
+  /* max-width: 400px; */
+  margin: 0;
+  width: 100%;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
+  /* transform: translateX(8px); */
+  gap:50%;
+  
+
+
   
 }
 .contact-info-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
@@ -854,24 +871,34 @@ section { padding: 80px 0; }
   align-items: center; 
   justify-content: center;
   font-size: 1.5rem;
-  margin: 0 auto 18px;
+  margin: 0;
   color: var(--blue-mid);
-  margin-left: 12%;
+  /* margin-left: 5%; */
+  /* margin-left: 35%; */
+  gap:7px;
+  /* margin-right: 12%; */
+  margin-top: 1%;
+  vertical-align: middle;
+  /* text-align: center; */
+  /* margin-right: 0; */
+  
+  
   
 }
-.contact-info-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--text-main);}
-.contact-info-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+.contact-info-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: var(--text-main); justify-content: center;}
+.contact-info-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; text-align: center;}
 .contact-info-card a { color: var(--blue-mid); font-weight: 500; }
 
 /* =========================================
    CONTACT FORM
    ========================================= */
-.contact-form-section { background: var(--off-white); }
+.contact-form-section { background: var(--off-white);}
 .contact-form-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: start;
+  /* width: 100%; */
 }
 .form-card {
   background: var(--white);
@@ -914,13 +941,16 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   overflow: hidden;
   border: 1px solid var(--gray-200);
   box-shadow: var(--shadow-sm);
+  /* width:55%; */
+  /* height: 100%; */
 }
 .map-wrapper iframe {
   width: 100%;
   height: 400px;
+  /* min-height: 500px; */
   border: none;
   display: block;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
 }
 .map-info {
   background: var(--white);
@@ -1468,12 +1498,17 @@ textarea.form-control { resize: vertical; min-height: 110px; }
     margin-top: 7%;
   }
   
-
   
   .form-row { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .hero-content { padding: 60px 0; }
   .contact-form-wrapper { grid-template-columns: 1fr; }
+
+  .contact-info-card{margin-right: 0; justify-content: center; gap:6px;}
+  .contact-info-icon{margin-right: 0; justify-items: center; vertical-align: middle;}
+
+  /* .contact-info-grid{flex-direction: column;} */
+
   .appointment-form-grid { grid-template-columns: 1fr; }
   /* Testimonials page */
   .rating-grid { grid-template-columns: 1fr; }
