@@ -18,7 +18,7 @@ const navbarHTML = `
   <!-- Desktop Navigation Links -->
   <ul class="nav-links" role="list">
     <li><a href="index.html" data-page="index">Home</a></li>
-    <li><a href="about.html" data-page="about">About Dr. Arun</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
     <li><a href="services.html" data-page="services">Services</a></li>
     <li><a href="testimonials.html" data-page="testimonials">Testimonials</a></li>
     <li><a href="appointment.html" class="btn-nav" data-page="appointment">Book Appointment</a></li>
@@ -34,7 +34,7 @@ const navbarHTML = `
   <!-- Mobile Navigation Menu -->
   <ul class="mobile-nav" id="mobile-nav" role="list" aria-hidden="true">
     <li><a href="index.html" data-page="index">Home</a></li>
-    <li><a href="about.html" data-page="about">About Dr. Arun</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
     <li><a href="services.html" data-page="services">Services</a></li>
     <li><a href="testimonials.html" data-page="testimonials">Testimonials</a></li>
     <li><a href="appointment.html" class="btn-nav" data-page="appointment">📅 Book Appointment</a></li>
@@ -76,7 +76,7 @@ const footerHTML = `
         <h4>Quick Links</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Dr. Arun</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="services.html">Our Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="appointment.html">Book Appointment</a></li>
