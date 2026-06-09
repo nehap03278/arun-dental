@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#1a3e72"/>
+  <!-- Tooth body scaled to 32×32 -->
+  <path d="M16 3C9.4 3 6.5 8 6.5 13C6.5 18.5 8 23.5 9.8 27.5L12 31C12.5 32.5 13.8 33 15 31.5L15.5 25.5L16.5 25.5L17 31.5C18.2 33 19.5 32.5 20 31L22.2 27.5C24 23.5 25.5 18.5 25.5 13C25.5 8 22.6 3 16 3Z" fill="#F5C030"/>
+  <!-- Crown highlight triangle -->
+  <path d="M16 3L6.5 13L16 13Z" fill="#FBDA5A" opacity="0.5"/>
+</svg>

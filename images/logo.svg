@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 96">
+  <!-- Main tooth body -->
+  <path d="M40 5C22 5 15 16 15 28C15 42 18 54 22 64L27 86C28 90 31 91 33 88.5L34 70L46 70L47 88.5C49 91 52 90 53 86L58 64C62 54 65 42 65 28C65 16 58 5 40 5Z" fill="#F5C030"/>
+  <!-- Crown cusp highlight – lighter gold triangle for depth -->
+  <path d="M40 5L15 28L40 28Z" fill="#FBDA5A" opacity="0.55"/>
+  <!-- Cusp dividing line -->
+  <line x1="40" y1="5" x2="40" y2="28" stroke="#C98C05" stroke-width="1.4" opacity="0.35"/>
+</svg>

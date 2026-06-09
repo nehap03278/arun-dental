@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 106">
+  <!-- Origami-style golden tooth — transparent background -->
+
+  <!-- Main body: darker amber base for depth -->
+  <path d="M50 17C46 9 40 4 32 4C20 4 8 14 8 30C7 46 11 62 17 76L24 91C26 99 33 103 39 98L46 79C48 75 52 75 54 79L61 98C67 103 74 99 76 91L83 76C89 62 93 46 92 30C92 14 80 4 68 4C60 4 54 9 50 17Z" fill="#C07808"/>
+
+  <!-- Front-left face: main warm gold -->
+  <path d="M50 17C46 9 40 4 32 4C20 4 8 14 8 30L26 30L50 17Z" fill="#E8A020"/>
+
+  <!-- Front-right face: slightly lighter gold -->
+  <path d="M50 17L74 30L92 30C92 14 80 4 68 4C60 4 54 9 50 17Z" fill="#F0B030"/>
+
+  <!-- Lower body face: main warm gold -->
+  <path d="M8 30C7 46 11 62 17 76L24 91C26 99 33 103 39 98L46 79C48 75 52 75 54 79L61 98C67 103 74 99 76 91L83 76C89 62 93 46 92 30L74 30L50 17L26 30Z" fill="#D4870A"/>
+
+  <!-- Inner fold lines for origami effect -->
+  <line x1="50" y1="17" x2="26" y2="30" stroke="#B06008" stroke-width="1" opacity="0.4"/>
+  <line x1="50" y1="17" x2="74" y2="30" stroke="#B06008" stroke-width="1" opacity="0.4"/>
+</svg>
