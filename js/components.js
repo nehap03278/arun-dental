@@ -11,14 +11,14 @@ const navbarHTML = `
 <nav class="navbar" role="navigation" aria-label="Main navigation">
   <!-- Logo -->
   <a href="index.html" class="nav-logo" aria-label="Sky Dental Home">
-    <div class="logo-icon">🦷</div>
+    <div class="logo-icon"><img src="images/teeth.jpeg" alt="Sky Dental logo" width="44" height="44" loading="eager" /></div>
     <span class="logo-text">SKY DENTAL</span>
   </a>
 
   <!-- Desktop Navigation Links -->
   <ul class="nav-links" role="list">
     <li><a href="index.html" data-page="index">Home</a></li>
-    <li><a href="about.html" data-page="about">About Dr. Arun</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
     <li><a href="services.html" data-page="services">Services</a></li>
     <li><a href="testimonials.html" data-page="testimonials">Testimonials</a></li>
     <li><a href="appointment.html" class="btn-nav" data-page="appointment">Book Appointment</a></li>
@@ -34,10 +34,10 @@ const navbarHTML = `
   <!-- Mobile Navigation Menu -->
   <ul class="mobile-nav" id="mobile-nav" role="list" aria-hidden="true">
     <li><a href="index.html" data-page="index">Home</a></li>
-    <li><a href="about.html" data-page="about">About Dr. Arun</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
     <li><a href="services.html" data-page="services">Services</a></li>
     <li><a href="testimonials.html" data-page="testimonials">Testimonials</a></li>
-    <li><a href="appointment.html" class="btn-nav" data-page="appointment">📅 Book Appointment</a></li>
+    <li><a href="appointment.html" class="btn-nav" data-page="appointment">Book Appointment</a></li>
   </ul>
 </nav>
 `;
@@ -50,10 +50,7 @@ const footerHTML = `
 
       <!-- Brand Column -->
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo" aria-label="Sky Dental Home">
-          <div class="logo-icon">🦷</div>
-          <span class="logo-text">SKY DENTAL</span>
-        </a>
+        <span class="logo-text" style="display:block;margin-bottom:14px;">SKY DENTAL</span>
         <p>
           Dedicated to transforming smiles with cutting-edge technology and expertise.
           Dr. Arun is committed to providing top-quality dental care for the whole family.
@@ -76,7 +73,7 @@ const footerHTML = `
         <h4>Quick Links</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Dr. Arun</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="services.html">Our Services</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="appointment.html">Book Appointment</a></li>
@@ -101,19 +98,19 @@ const footerHTML = `
       <div class="footer-col">
         <h4>Contact Us</h4>
         <div class="footer-contact-item">
-          <div class="icon">📍</div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <p>Sky Dental, 2-89/8, Tellapur Rd, Gachibowil, Nallagandla, Telangana 500046</p>
         </div>
         <div class="footer-contact-item">
-          <div class="icon">📞</div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.37a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.8-1.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <p><a href="tel:+919000000000">+91 9676306667</a></p>
         </div>
         <div class="footer-contact-item">
-          <div class="icon">📧</div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
           <p><a href="mailto:info@skydental.in">info@skydental.in</a></p>
         </div>
         <div class="footer-contact-item">
-          <div class="icon">🕐</div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <p>Mon–Sat: 9:30 AM – 8:30 PM<br>Sunday: 10:00 AM – 2:00 PM</p>
         </div>
       </div>

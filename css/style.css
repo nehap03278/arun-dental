@@ -86,15 +86,18 @@ section { padding: 80px 0; }
   text-decoration: none;
 }
 .nav-logo .logo-icon {
-  width: 40px;
+  width: 46px;
   height: 40px;
-  background: var(--blue-dark);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold);
-  font-size: 18px;
+  flex-shrink: 0;
+}
+.nav-logo .logo-icon img {
+  width: 44px;
+  height: 38px;
+  display: block;
+  mix-blend-mode: multiply;
 }
 .nav-logo .logo-text {
   font-family: var(--font-head);
@@ -373,6 +376,98 @@ section { padding: 80px 0; }
 .btn-lg { padding: 16px 36px; font-size: 1.05rem; }
 
 /* =========================================
+   HOW IT WORKS TIMELINE
+   ========================================= */
+.how-it-works-section .steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+  position: relative;
+}
+.how-it-works-section .step-card {
+  text-align: center;
+  position: relative;
+}
+.how-it-works-section .step-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 16px;
+}
+.how-it-works-section .step-icon--blue {
+  background: rgba(30,80,150,0.08);
+}
+.how-it-works-section .step-icon--gold {
+  background: rgba(232,160,32,0.1);
+}
+.how-it-works-section .step-number-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 12px;
+  overflow: visible;
+}
+.how-it-works-section .step-card:not(:last-child) .step-number-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 14px);
+  width: calc(100% - 4px);
+  height: 1.5px;
+  background: #D5D9E0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.how-it-works-section .step-number {
+  width: 28px;
+  height: 28px;
+  background: var(--blue-dark);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+.how-it-works-section .step-card h4 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.how-it-works-section .step-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 480px) {
+  .how-it-works-section .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .how-it-works-section .step-card:not(:last-child) .step-number-wrapper::after {
+    display: none;
+  }
+  .how-it-works-section .step-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(64px + 16px + 28px);
+    width: 1.5px;
+    height: calc(100% + 24px - 28px);
+    background: #D5D9E0;
+    z-index: 1;
+  }
+}
+
+/* =========================================
    SECTION TITLES
    ========================================= */
 .section-title {
@@ -421,10 +516,13 @@ section { padding: 80px 0; }
 .hero-bg-image {
   position: absolute;
   inset: 0;
-  background-image: url('../images/10\ dr.Arun\'s\ pic.webp');
-  background-size: cover;
-  background-position: center right; 
   opacity: 0.22;
+}
+.hero-bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
 }
 .hero-overlay {
   position: absolute;
@@ -568,6 +666,46 @@ section { padding: 80px 0; }
   transition: var(--transition);
 }
 .service-card .learn-more:hover { gap: 10px; color: var(--blue-dark); }
+
+/* Service cards with background images */
+.service-card.has-bg {
+  background-size: cover;
+  background-position: center;
+  background-color: var(--blue-dark);
+  border-color: transparent;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.service-card.has-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10,22,55,0.52), rgba(10,22,55,0.80));
+  border-radius: var(--radius-md);
+  z-index: 0;
+  transition: background 0.3s ease;
+}
+.service-card.has-bg:hover::after {
+  background: linear-gradient(to bottom, rgba(10,22,55,0.35), rgba(10,22,55,0.65));
+}
+.service-card.has-bg > * {
+  position: relative;
+  z-index: 1;
+}
+.service-card.has-bg .service-icon {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(4px);
+}
+.service-card.has-bg .service-icon svg { stroke: var(--white); }
+.service-card.has-bg:hover .service-icon { background: var(--gold); }
+.service-card.has-bg h3 { color: var(--white); }
+.service-card.has-bg p { color: rgba(255,255,255,0.82); }
+.service-card.has-bg .learn-more { color: var(--gold-light); }
+.service-card.has-bg .learn-more:hover { color: var(--white); }
 
 /* =========================================
    ABOUT / DOCTOR SECTION
@@ -966,7 +1104,9 @@ textarea.form-control { resize: vertical; min-height: 110px; }
    APPOINTMENT PAGE
    ========================================= */
 .appointment-hero {
-  background: linear-gradient(100deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+  background:
+    linear-gradient(rgba(26,62,114,0.80), rgba(26,62,114,0.80)),
+    url('../images/2.webp') center / cover no-repeat;
   padding: 72px 0;
   text-align: center;
 }
@@ -1030,7 +1170,9 @@ textarea.form-control { resize: vertical; min-height: 110px; }
    PAGE HERO (inner pages)
    ========================================= */
 .page-hero {
-  background: linear-gradient(100deg, var(--blue-dark) 0%, var(--blue-mid) 100%);
+  background:
+    linear-gradient(rgba(26,62,114,0.80), rgba(26,62,114,0.80)),
+    url('../images/2.webp') center / cover no-repeat;
   padding: 72px 0;
   text-align: center;
 }
@@ -1225,7 +1367,9 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 
 /* Hero */
 .testi-hero {
-  background: linear-gradient(100deg, var(--blue-dark) 0%, #1e5096 100%);
+  background:
+    linear-gradient(rgba(26,62,114,0.80), rgba(26,62,114,0.80)),
+    url('../images/2.webp') center / cover no-repeat;
   padding: 72px 0;
   text-align: center;
 }
@@ -1394,31 +1538,52 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   margin-top: 48px;
 }
 .video-placeholder {
-  background: var(--gray-100);
+  position: relative;
   border-radius: var(--radius-md);
   aspect-ratio: 16/9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  border: 2px dashed var(--gray-200);
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  gap: 10px;
+  overflow: hidden;
   cursor: pointer;
   transition: var(--transition);
 }
-.video-placeholder:hover { border-color: var(--blue-mid); }
+.video-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26,62,114,0.52);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+.video-placeholder:hover .video-thumb { transform: scale(1.06); }
+.video-placeholder:hover .video-overlay { background: rgba(26,62,114,0.35); }
 .play-btn {
+  position: relative;
+  z-index: 2;
   width: 56px; height: 56px;
-  background: var(--blue-dark);
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  border: 2px solid rgba(255,255,255,0.6);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   color: var(--white);
   font-size: 1.4rem;
   transition: var(--transition);
 }
-.video-placeholder:hover .play-btn { background: var(--gold); transform: scale(1.08); }
+.video-placeholder:hover .play-btn {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: scale(1.1);
+}
 
 /* Featured Quote */
 .featured-quote-section {
