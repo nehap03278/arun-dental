@@ -667,6 +667,46 @@ section { padding: 80px 0; }
 }
 .service-card .learn-more:hover { gap: 10px; color: var(--blue-dark); }
 
+/* Service cards with background images */
+.service-card.has-bg {
+  background-size: cover;
+  background-position: center;
+  background-color: var(--blue-dark);
+  border-color: transparent;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.service-card.has-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10,22,55,0.52), rgba(10,22,55,0.80));
+  border-radius: var(--radius-md);
+  z-index: 0;
+  transition: background 0.3s ease;
+}
+.service-card.has-bg:hover::after {
+  background: linear-gradient(to bottom, rgba(10,22,55,0.35), rgba(10,22,55,0.65));
+}
+.service-card.has-bg > * {
+  position: relative;
+  z-index: 1;
+}
+.service-card.has-bg .service-icon {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(4px);
+}
+.service-card.has-bg .service-icon svg { stroke: var(--white); }
+.service-card.has-bg:hover .service-icon { background: var(--gold); }
+.service-card.has-bg h3 { color: var(--white); }
+.service-card.has-bg p { color: rgba(255,255,255,0.82); }
+.service-card.has-bg .learn-more { color: var(--gold-light); }
+.service-card.has-bg .learn-more:hover { color: var(--white); }
+
 /* =========================================
    ABOUT / DOCTOR SECTION
    ========================================= */
