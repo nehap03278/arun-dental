@@ -437,6 +437,23 @@ section { padding: 80px 0; }
   color: var(--text-muted);
 }
 
+@media (min-width: 769px) {
+  .how-it-works-section .step-number-wrapper {
+    position: relative;
+    overflow: visible;
+  }
+  .how-it-works-section .step-card:not(:last-child) .step-number-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 14px);
+    width: calc(100% - 4px);
+    height: 1.5px;
+    background: #D5D9E0;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
 @media (max-width: 768px) {
   .how-it-works-section .steps-grid {
     grid-template-columns: repeat(2, 1fr);
