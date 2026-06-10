@@ -455,10 +455,12 @@ section { padding: 80px 0; }
     grid-template-columns: repeat(2, 1fr);
   }
   .how-it-works-section .step-card:not(:last-child) .step-number-wrapper::after {
-    display: none;
+    display: none !important;
+    content: none !important;
   }
   .how-it-works-section .step-card:not(:last-child)::after {
-    display: none;
+    display: none !important;
+    content: none !important;
   }
 }
 @media (max-width: 480px) {
