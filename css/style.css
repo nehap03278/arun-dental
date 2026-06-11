@@ -715,8 +715,8 @@ section { padding: 80px 0; }
   z-index: 2;
 }
 .service-card.has-bg h3 { color: var(--gold-light); }
-.service-card.has-bg p { color: #f0ece4; }
-.service-card.has-bg .learn-more { color: var(--white); }
+.service-card.has-bg p { color: #c8d4e8; }
+.service-card.has-bg .learn-more { color: #c8d4e8; }
 .service-card.has-bg .learn-more:hover { color: var(--gold-light); }
 
 /* =========================================
