@@ -9,27 +9,29 @@
 // ── NAVBAR HTML ──────────────────────────────────────────
 const navbarHTML = `
 <nav class="navbar" role="navigation" aria-label="Main navigation">
-  <!-- Logo -->
-  <a href="index.html" class="nav-logo" aria-label="Sky Dental Home">
-    <div class="logo-icon"><img src="images/teeth.jpeg" alt="Sky Dental logo" width="44" height="44" loading="eager" /></div>
-    <span class="logo-text">SKY DENTAL</span>
-  </a>
+  <div class="nav-container">
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo" aria-label="Sky Dental Home">
+      <div class="logo-icon"><img src="images/teeth.jpeg" alt="Sky Dental logo" width="44" height="44" loading="eager" /></div>
+      <span class="logo-text">SKY DENTAL</span>
+    </a>
 
-  <!-- Desktop Navigation Links -->
-  <ul class="nav-links" role="list">
-    <li><a href="index.html" data-page="index">Home</a></li>
-    <li><a href="about.html" data-page="about">About</a></li>
-    <li><a href="services.html" data-page="services">Services</a></li>
-    <li><a href="testimonials.html" data-page="testimonials">Testimonials</a></li>
-    <li><a href="appointment.html" class="btn-nav" data-page="appointment">Book Appointment</a></li>
-  </ul>
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" data-page="index">Home</a></li>
+      <li><a href="about.html" data-page="about">About</a></li>
+      <li><a href="services.html" data-page="services">Services</a></li>
+      <li><a href="testimonials.html" data-page="testimonials">Testimonials</a></li>
+      <li><a href="appointment.html" class="btn-nav" data-page="appointment">Book Appointment</a></li>
+    </ul>
 
-  <!-- Mobile Hamburger Button -->
-  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger-btn">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+    <!-- Mobile Hamburger Button -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 
   <!-- Mobile Navigation Menu -->
   <ul class="mobile-nav" id="mobile-nav" role="list" aria-hidden="true">

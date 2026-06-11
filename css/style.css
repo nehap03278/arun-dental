@@ -70,12 +70,17 @@ section { padding: 80px 0; }
 .navbar {
   background: var(--white);
   box-shadow: 0 2px 16px rgba(26,62,114,0.10);
+  height: 72px;
+  position: relative;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 24px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
-  position: relative;
 }
 
 /* Logo */
